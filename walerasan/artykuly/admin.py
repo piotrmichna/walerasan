@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from artykuly.models import Artykuly
+
+admin.site.register(Artykuly)

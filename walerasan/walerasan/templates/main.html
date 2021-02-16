@@ -1,0 +1,16 @@
+{% extends "main_base.html" %}
+
+{% block title %} Title nowy rozszezony{% endblock %}
+{% block contentx %}
+    <table>
+    {% for artykul in art %}
+    <tr>
+        <td>{{ artykul.title }}</td>
+        <td>{{ artykul.description }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+
+{% endblock %}
+{%  block footer %} Stopka {% endblock %}
