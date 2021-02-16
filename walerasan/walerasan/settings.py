@@ -120,7 +120,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 try:
-    from wdp.local_settings import DATABASES
+    from walerasan.local_settings import DATABASES
     print('local_settings')
 except ModuleNotFoundError:
     print("Brak konfiguracji bazy danych w pliku local_settings.py!")
